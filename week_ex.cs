@@ -1,0 +1,53 @@
+using System;
+using System.Diagnostics.Metrics;
+
+namespace ALi
+{
+    class NumberManipulator
+    {
+
+        static void Main(string[] args)
+        {
+            Console.Write($"Enter a number (1-7):");
+            int num1;
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+
+          switch(num1)
+            {
+                case 1: Console.WriteLine("Output: Monday");
+                    break;
+                
+                case 2: Console.WriteLine("Output: Tuesday");
+                    break;
+
+                case 3: Console.WriteLine("Output: Wednesday");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Output: Thursday");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Output: Friday");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Output: Saturday");
+                    break;
+
+                case 7: Console.WriteLine("Output: Sunday");
+                    break;
+
+                default: Console.WriteLine("Output: Invalid input. Please enter a number between 1 and 7.");
+                    break;
+                       
+
+            }
+
+
+        }
+
+
+    }
+}
